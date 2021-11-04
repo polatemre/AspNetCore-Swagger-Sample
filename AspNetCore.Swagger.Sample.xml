@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Swagger.Sample</name>
+    </assembly>
+    <members>
+        <member name="M:AspNetCore.Swagger.Sample.Controllers.CountryController.GetAll">
+            <summary>
+            Get All Countries
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

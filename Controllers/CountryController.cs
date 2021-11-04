@@ -23,9 +23,18 @@ namespace AspNetCore.Swagger.Sample.Controllers
             _countries = JsonConvert.DeserializeObject<List<Countries>>(json);
         }
 
+        /// <summary>
+        /// Get All Countries
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
+            if (_countries is null)
+            {
+                return BadRequest();
+            }
+
             return Ok(_countries);
         }
     }
